@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>일본 여행 가이드 - 10114 임</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-brand {
+      font-size: 24px; /* 폰트 사이즈 조정 */
+      font-weight: bold; /* 폰트 굵기 조정 */
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+    }
+    .navbar {
+      margin-bottom: 30px;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .bg-light {
+      background-color: #f8f9fa !important;
+    }
+    .bg-primary {
+      background-color: #007bff !important;
+      color: white;
+    }
+    .bg-secondary {
+      background-color: #6c757d !important;
+      color: white;
+    }
+    .bg-success {
+      background-color: #28a745 !important;
+      color: white;
+    }
+    .bg-info {
+      background-color: #17a2b8 !important;
+      color: white;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    .carousel-inner img,
+    .attraction-item img {
+      width: 100%;
+      height: auto;
+    }
+    .modal-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+    .attraction-item {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .btn-details {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+    iframe {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- 내비게이션 바 - 항목을 변경하거나 추가할 수 있습니다 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">일본 여행 가이드 - 10100 홍길동</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#overview">개요</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#history">역사</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#attractions">관광지</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tips">여행 팁</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 개요 섹션 -->
+  <section id="overview" class="section bg-primary">
+    <div class="container">
+      <h2 class="text-center">개요</h2>
+      <p>일본은 동아시아의 섬나라로, 풍부한 문화유산, 첨단 기술, 아름다운 풍경으로 유명합니다. 도쿄의 번화한 거리부터 교토의 고요한 사원까지, 일본은 현대와 전통의 독특한 조화를 제공합니다.</p>
+      <!-- 이미지 슬라이드 - 이미지를 변경하려면 src 속성 값을 수정하세요 -->
+      <div id="overviewCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="dd.jpg" class="d-block w-100" alt="일본 개요 1">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="후지.jpg" class="d-block w-100" alt="일본 개요 2">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="일본1.jpg" class="d-block w-100" alt="일본 개요 3">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="일본2.jpg" class="d-block w-100" alt="일본 개요 4">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="OIP.jpg" class="d-block w-100" alt="일본 개요 5">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#overviewCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">이전</span>
+        </a>
+        <a class="carousel-control-next" href="#overviewCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">다음</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 역사 섹션 -->
+  <section id="history" class="section bg-secondary">
+    <div class="container">
+      <h2 class="text-center">역사</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="야마토.jpg" alt="일본 역사 1" class="img-fluid">
+            <p>야마토 시대는 일본의 역사에서 중요한 전환기를 맞이한 시기로, 정치적 통합, 문화적 발전, 사회적 제도의 정비 등이 이루어진 시기입니다. 이 시기는 야마토 왕국의 성립과 발전, 불교의 전파, 그리고 율령 제도의 도입 등을 통해 일본의 근본적인 국가 체제와 문화적 기초가 다져진 시기였습니다. 이후의 나라 시대로의 전환은 일본의 역사적 발전을 위한 중요한 기초가 되었으며, 현대 일본의 기초를 마련하는 계기가 되었습니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="에도.jpg" alt="일본 역사 2" class="img-fluid">
+            <p>에도 시대는 일본 역사에서 평화와 안정의 시대를 대표하는 시기입니다. 도쿠가와 이예야스의 막부 통치 아래에서 사회는 체계적으로 정비되었고, 경제는 성장했으며, 문화는 큰 발전을 이루었습니다. 그러나 외부의 압력과 내부의 갈등이 쌓여 가며 결국 메이지 유신이라는 대변혁을 초래하게 되었고, 이로써 일본은 근대 국가로서의 새로운 출발을 하게 되었습니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="일본 근대.jpg" alt="일본 역사 3" class="img-fluid">
+            <p>일본의 근대 시대는 메이지 유신의 시작으로부터 제2차 세계 대전의 종전까지, 일본이 근대 국가로서의 정체성을 확립하고 국제 사회에서 중요한 역할을 수행하게 되는 과정을 담고 있습니다. 이 시기는 정치적 개혁, 경제적 발전, 사회적 변화, 문화적 성장의 복합적인 요소들이 어우러진 시기로, 현대 일본의 기초를 다진 중요한 시기였습니다</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 역사 1 -->
+  <div class="modal fade" id="historyModal1" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel1">역사 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="야마토.jpg" alt="일본 역사 1" class="img-fluid">
+          <p>야마토 시대는 일본의 역사에서 중요한 전환기를 맞이한 시기로, 정치적 통합, 문화적 발전, 사회적 제도의 정비 등이 이루어진 시기입니다. 이 시기는 야마토 왕국의 성립과 발전, 불교의 전파, 그리고 율령 제도의 도입 등을 통해 일본의 근본적인 국가 체제와 문화적 기초가 다져진 시기였습니다. 이후의 나라 시대로의 전환은 일본의 역사적 발전을 위한 중요한 기초가 되었으며, 현대 일본의 기초를 마련하는 계기가 되었습니다.
+
+</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 2 -->
+  <div class="modal fade" id="historyModal2" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel2">역사 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="에도.jpg" alt="일본 역사 2" class="img-fluid">
+          <p>에도 시대는 일본 역사에서 평화와 안정의 시대를 대표하는 시기입니다. 도쿠가와 이예야스의 막부 통치 아래에서 사회는 체계적으로 정비되었고, 경제는 성장했으며, 문화는 큰 발전을 이루었습니다. 그러나 외부의 압력과 내부의 갈등이 쌓여 가며 결국 메이지 유신이라는 대변혁을 초래하게 되었고, 이로써 일본은 근대 국가로서의 새로운 출발을 하게 되었습니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 3 -->
+  <div class="modal fade" id="historyModal3" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel3">역사 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="일본 근대.jpg" alt="일본 역사 3" class="img-fluid">
+          <p>일본의 근대 시대는 메이지 유신의 시작으로부터 제2차 세계 대전의 종전까지, 일본이 근대 국가로서의 정체성을 확립하고 국제 사회에서 중요한 역할을 수행하게 되는 과정을 담고 있습니다. 이 시기는 정치적 개혁, 경제적 발전, 사회적 변화, 문화적 성장의 복합적인 요소들이 어우러진 시기로, 현대 일본의 기초를 다진 중요한 시기였습니다.</p>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 관광지 섹션 -->
+  <section id="attractions" class="section bg-success">
+    <div class="container">
+      <h2 class="text-center">관광지</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="메이지 신궁.jpg" alt="일본 관광지 1" class="img-fluid">
+            <p>도쿄의 신주쿠 구에 위치한 일본의 주요 신사로, 일본의 근대 역사와 관련된 중요한 문화유산입니다. 이 신사는 메이지 천황(明治天皇)과 쇼켄 황후(昭憲皇后)를 기리기 위해 건립된 신사입니다. 메이지 신궁은 일본의 근대화와 현대화의 상징적인 장소로, 많은 일본인들과 관광객들에게 사랑받고 있습니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="우에노 축제.jpg" alt="일본 관광지 2" class="img-fluid">
+            <p> 일본 도쿄의 우에노 공원에서 매년 봄에 열리는 벚꽃 축제입니다. 이 축제는 일본에서 가장 유명한 벚꽃 명소 중 하나로, 국내외에서 수많은 관광객이 방문하는 인기 있는 행사입니다. 벚꽃이 만개하는 시기에 열리는 이 축제는 일본의 전통적인 봄의 아름다움을 만끽할 수 있는 기회를 제공합니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="도톤보리.jpg" alt="일본 관광지 3" class="img-fluid">
+            <p>일본 오사카의 중심 상업 지구로, 식도락과 쇼핑의 명소로 유명합니다. 도톤보리는 오사카의 관광 명소 중 하나로, 다양한 음식점, 쇼핑 거리, 오락시설, 역사적인 장소가 밀집해 있는 지역입니다. 이곳은 특히 일본 전통 문화와 현대적 즐길 거리가 조화를 이루는 곳으로 많은 관광객들에게 사랑받고 있습니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 관광지 1 -->
+  <div class="modal fade" id="attractionModal1" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel1">관광지 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="메이지 신궁.jpg" alt="일본 관광지 1" class="img-fluid">
+          <p>신사 내에는 메이지 신궁 미술관이 있으며, 이곳에서는 일본의 전통 미술과 역사적인 유물들을 전시합니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 2 -->
+  <div class="modal fade" id="attractionModal2" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel2">관광지 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="" alt="우에노 축제.jpg" class="img-fluid">
+          <p>공원의 설계는 일본의 근대화와 서구화를 반영하여, 일본 전통 정원과 서구식 공원이 조화롭게 배치되었습니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 3 -->
+  <div class="modal fade" id="attractionModal3" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel3">관광지 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="도톤보리.jpg" alt="일본 관광지 3" class="img-fluid">
+          <p>톤보리의 대표적인 랜드마크 중 하나로, 글리코라는 스낵 브랜드의 광고 간판입니다. 글리코맨은 달리는 운동선수의 모습을 형상화한 상징적인 캐릭터로, 사진 촬영 명소로 유명합니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 여행 팁 섹션 -->
+  <section id="tips" class="section bg-info">
+    <div class="container">
+      <h2 class="text-center">여행 팁</h2>
+      <ul>
+        <li>방문하기 좋은 시기: 봄 (3월~5월)과 가을 (9월~11월).</li>
+        <li>언어: 일본어. 주요 도시에서는 영어도 사용되지만, 기본적인 일본어 구문을 배우면 도움이 됩니다.</li>
+        <li>통화: 일본 엔 (JPY).</li>
+        <li>교통: 일본은 기차, 버스, 지하철 등 광범위한 교통망을 자랑합니다. JR 패스는 장거리 여행에 매우 유용합니다.</li>
+      </ul>
+      <div class="text-center">
+        <!-- 여기에 YouTube 동영상 링크를 추가하세요 --> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0KANmqDdyIw?si=tJ7MGqNV6xh9pdFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      </div>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <p>&copy; 2024 일본 여행 가이드. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
